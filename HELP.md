@@ -1,5 +1,16 @@
 # Native test
 
+
+build
+
+mvn package -Dnative -Dquarkus.native.container-build=true
+
+or for powerShell:
+
+mvn package  -Dnative -DskipTests --define quarkus.native.container-build=true
+
+update target/sam.native.yaml
+
 ```yaml
 Runtime: provided.al2023
 ```
